@@ -48,4 +48,14 @@ public class PatientResponseDTO {
         this.dateOfBirth = dateOfBirth;
     }
 
+    private String registeredDate;
+
+    public String getRegisteredDate() {
+        return registeredDate;
+    }
+
+    public void setRegisteredDate(String registeredDate) {
+        this.registeredDate = registeredDate;
+    }
+
 }

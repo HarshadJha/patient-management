@@ -7,17 +7,20 @@ import com.pm.patientservice.model.Patient;
 import java.time.LocalDate;
 
 public class PatientMapper {
-    public static PatientResponseDTO toDTO(Patient patient){
+    public static PatientResponseDTO toDTO(Patient patient) {
         PatientResponseDTO patientDTO = new PatientResponseDTO();
         patientDTO.setId(patient.getId().toString());
         patientDTO.setName(patient.getName());
         patientDTO.setEmail(patient.getEmail());
         patientDTO.setAddress(patient.getAddress());
         patientDTO.setDateOfBirth(patient.getDateOfBirth().toString());
+        if (patient.getRegisteredDate() != null) {
+            patientDTO.setRegisteredDate(patient.getRegisteredDate().toString());
+        }
         return patientDTO;
     }
 
-    public static Patient toModel(PatientRequestDTO patientRequestDTO){
+    public static Patient toModel(PatientRequestDTO patientRequestDTO) {
         Patient patient = new Patient();
         patient.setName(patientRequestDTO.getName());
         patient.setEmail(patientRequestDTO.getEmail());

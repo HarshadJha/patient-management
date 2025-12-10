@@ -78,5 +78,4 @@ public class Patient {
         this.registeredDate = registeredDate;
     }
 
-
 }

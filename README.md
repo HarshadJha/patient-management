@@ -18,6 +18,7 @@ cd patient-management
 
 ### 2. Run the application
 
+#### Backend
 The application is located in the `patient-service` directory. You can run it using the Maven wrapper.
 
 ```bash
@@ -26,6 +27,17 @@ cd patient-service
 ```
 
 The application will start on **port 4000**.
+
+#### Frontend
+The UI is located in the `patient-ui` directory.
+
+```bash
+cd patient-ui
+npm install
+npm run dev
+```
+
+Access the UI at [http://localhost:5173](http://localhost:5173).
 
 ## API Documentation
 
