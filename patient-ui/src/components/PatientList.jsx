@@ -50,14 +50,8 @@ const PatientList = ({ patients, onEdit, onDelete }) => {
                             <p><strong>DOB:</strong> {patient.dateOfBirth}</p>
                         </div>
                         <div className="patient-actions">
-                            <button onClick={() => navigate(`/patients/${patient.id}`)} className="btn btn-secondary" style={{ marginRight: '0.5rem' }}>
-                                View
-                            </button>
-                            <button onClick={() => onEdit(patient)} className="btn btn-outline" style={{ marginRight: '0.5rem' }}>
-                                Edit
-                            </button>
-                            <button onClick={() => onDelete(patient.id)} className="btn btn-danger">
-                                Delete
+                            <button onClick={() => navigate(`/patients/${patient.id}`)} className="btn btn-secondary" style={{ width: '100%' }}>
+                                View Details
                             </button>
                         </div>
                     </div>
